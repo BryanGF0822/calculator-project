@@ -1,5 +1,25 @@
 # calculator/core.py
 import math
+from sympy import sympify, SympifyError
+# ===================================================
+# ===================================================
+
+def get_number(prompt):
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Please enter a valid number.")
+
+def evaluate_expression(expression):
+    try:
+        return sympify(expression)
+    except SympifyError:
+        print("Invalid expression.")
+
+# ===================================================
+# ===================================================
+
 
 def add(a, b):
     return a + b

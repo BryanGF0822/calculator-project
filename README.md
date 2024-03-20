@@ -1,15 +1,15 @@
-# Basic Python Calculator
+# Advanced Python Calculator
 
-This repository contains a simple command-line calculator written in Python. It is designed to perform basic arithmetic operations like addition, subtraction, multiplication, and division. The project is structured to allow for easy maintenance and future improvements such as adding a graphical user interface, implementing threading, and more.
+This repository contains an advanced command-line calculator written in Python. It has been updated to perform not only basic arithmetic operations but also more complex mathematical functions. The project is structured to allow for easy maintenance and future improvements.
 
 ## Project Structure
 
 The project is organized as follows:
 ```sh
-calculadora/
+calculator_project/
 │
 ├── main.py
-├── calculadora/
+├── calculator/
 │   ├── __init__.py
 │   ├── core.py
 │   └── ui.py
@@ -26,6 +26,12 @@ calculadora/
   - Multiplication (`multiplicar`)
   - Division (`dividir`) with zero-division error handling
 
+- Advanced mathematical operations:
+  - Power
+  - Square root
+  - Logarithm
+  - Expression evaluation
+
 - Unit tests for the arithmetic operations
 
 ## How to Use
@@ -34,6 +40,18 @@ To use this calculator, follow these steps:
 
 1. Clone the repository to your local machine or download the source code.
 2. Navigate to the project directory in your terminal or command prompt.
+3. (Optional) Creates and activates a virtual environment:
+  ```sh
+   python -m venv venv
+   ```
+   Activate the virtual environment with the following command:
+   ```sh
+   .venv\Scripts\activate
+   ```
+4. Install the dependencies:
+  ```sh
+   pip install -r requirements.txt
+   ```
 3. Run the `main.py` script using Python. For example:
 
    ```sh
@@ -53,7 +71,7 @@ To ensure the mathematical operations are working correctly, you can run the inc
   ```
 or for specific Python versions:
   ```sh
-   python -m unittest discover tests
+   python3 -m unittest discover tests
   ```
 ## Future Improvements
 

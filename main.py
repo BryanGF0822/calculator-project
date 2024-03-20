@@ -1,20 +1,6 @@
 # main.py
 
-from calculator.core import add, subtraction, multiplication, division, power, square_root, logarithm
-from sympy import sympify, SympifyError
-
-def get_number(prompt):
-    while True:
-        try:
-            return float(input(prompt))
-        except ValueError:
-            print("Please enter a valid number.")
-
-def evaluate_expression(expression):
-    try:
-        return sympify(expression)
-    except SympifyError:
-        print("Invalid expression.")
+from calculator.core import add, subtraction, multiplication, division, power, square_root, logarithm, evaluate_expression, get_number
 
 def main():
     history = []
