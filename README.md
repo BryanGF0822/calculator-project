@@ -58,7 +58,7 @@ or for specific Python versions:
 ## Future Improvements
 
 - [ ] Implement a graphical user interface (GUI)
-- [ ] Add support for more complex mathematical operations
+- [x] Add support for more complex mathematical operations
 - [ ] Improve error handling and input validation
 - [ ] Optimize performance and refactor code for better maintainability
 
